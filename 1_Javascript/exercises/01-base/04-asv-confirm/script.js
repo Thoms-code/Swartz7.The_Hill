@@ -10,5 +10,20 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let age = prompt("Donnez-votre age") *1;
+    let sex = prompt("indiquez votre sexe");
+    let city = prompt("Indiquez votre ville");
+
+    const showPrompt = () => {
+        return prompt(`Votre Age : ${age} \nVotre Sexe : ${sex} \nVotre Ville : ${city} \n\nEst-ce correct ?`);
+    }
+
+    switch (showPrompt()) {
+        case "oui" :
+            alert("Ok");
+            break;
+        default :
+            showPrompt();
+    }
+
 })();
