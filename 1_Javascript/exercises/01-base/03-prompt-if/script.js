@@ -10,5 +10,14 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
-})();
+    let wantCake = prompt("Voulez-vous du gateau");
+    switch (wantCake) {
+        case "oui" :
+            alert("bravo !");
+            break;
+        default :
+            alert("du gâteau, ça ne se refuse pas !");
+            break;
+    }
+}
+)();
