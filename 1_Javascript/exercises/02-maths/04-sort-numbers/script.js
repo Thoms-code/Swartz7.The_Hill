@@ -11,8 +11,10 @@
 
 (() => {
     // to get the value of an input: document.getElementById("element-id").value
-
+    let inputNumbers = document.querySelector("#numbers");
     document.getElementById("run").addEventListener("click", () => {
-        // your code here
+        let arrayNumbers = (inputNumbers.value).split(",");
+        arrayNumbers.sort((a, b) => a - b);
+        alert(`Voici les chiffre classé par ordre croissnt: ${arrayNumbers.toString()}`);
     });
 })();
