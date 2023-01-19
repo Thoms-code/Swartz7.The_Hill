@@ -11,6 +11,15 @@
 
 (() => {
     document.getElementById("run").addEventListener("click", () => {
-        // your code here
+        let i = 1;
+        let squared = [];
+        while (i <= 21) {
+            if ((i % 2) === 0){
+                squared.push(Math.pow(i,2))   
+            }
+            i++;
+        }
+        console.log(squared)
+        alert(`carré des pair de 1 à 21: \n ${squared.toString()}`)
     });
 })();
