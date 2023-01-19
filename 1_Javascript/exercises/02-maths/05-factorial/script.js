@@ -11,8 +11,14 @@
 
 (() => {
     // to get the value of an input: document.getElementById("element-id").value
-
+    let number = Number(document.querySelector("#number").value);
+    let result = 1;
     document.getElementById("run").addEventListener("click", () => {
-        // your code here
+        console.log(number)
+        for (let i = 1 ; i <= number ; i++) {
+            console.log(`iter ${i}`)
+            result *= i;
+        }
+        console.log(result)
     });
 })();
