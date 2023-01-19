@@ -8,7 +8,20 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+// const randomColor = require('randomcolor');
+let btnScript = document.querySelector("#run");
+let body = document.querySelector("body");
 
+let colors = [
+    "blue",
+    "green",
+    "yellow",
+    "red",
+    "purple"
+];
 (() => {
-    // your code here
+    let random = Math.floor(Math.random() * colors.length);
+    btnScript.addEventListener("click", () => {
+        body.style.backgroundColor = colors[random];
+    })
 })();
