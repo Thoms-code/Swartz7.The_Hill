@@ -10,5 +10,19 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let buttonRed = document.querySelector("#red");
+    let buttonGreen = document.querySelector("#green");
+    let buttonYellow = document.querySelector("#yellow");
+    let buttonBlue = document.querySelector("#blue");
+    
+    let body = document.querySelector("body");
+    
+    const changeColor = (btnId, color) => {
+        btnId.addEventListener("click", () => {body.style.backgroundColor = color});
+    }
+    
+    changeColor(buttonRed, "red");
+    changeColor(buttonGreen, "green");
+    changeColor(buttonYellow, "yellow");
+    changeColor(buttonBlue, "blue");
 })();
