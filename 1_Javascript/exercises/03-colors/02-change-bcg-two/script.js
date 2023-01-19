@@ -10,5 +10,11 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let input = document.querySelector("#color").value;
+    let btnScript = document.querySelector("#run");
+    let body = document.querySelector("body");
+    
+    btnScript.addEventListener("click", () => {
+        body.style.backgroundColor = input;
+    })
 })();
