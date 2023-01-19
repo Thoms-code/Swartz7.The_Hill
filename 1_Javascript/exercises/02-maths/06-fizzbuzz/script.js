@@ -10,7 +10,13 @@
 // You will have time to focus on it later.
 
 (()=> {
+    let number = 155;
 
-    // your code here
-
+    if (number > 0 && number < 100) {
+        number % 3 === 0 && number % 5 === 0 ? console.log("fizzbuz")
+        : number % 3 === 0 ? console.log("fizz")
+        : number % 5 === 0 ? console.log("buzz")
+        : undefined;
+    } else {
+        console.log(number)}
 })();
